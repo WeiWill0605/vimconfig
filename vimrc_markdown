@@ -1,0 +1,29 @@
+set nocompatible              " required
+filetype off                  " required
+call plug#begin()
+Plug 'tpope/vim-sensible'
+
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/seoul256.vim'
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+call plug#end()
+
+set autoindent
+set ruler
+""colorscheme molokai
+set showcmd
+syntax enable
+set number
+set tabstop=4
+set shiftwidth=4
+set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h13
+set enc=utf-8
+set cindent
+syntax on
+nmap <silent> <F8> <Plug>MarkdownPreview " for normal mode
+imap <silent> <F8> <Plug>MarkdownPreview " for insert mode
+nmap <silent> <F9> <Plug>StopMarkdownPreview " for normal mode
+imap <silent> <F9> <Plug>StopMarkdownPreview " for insert mode
