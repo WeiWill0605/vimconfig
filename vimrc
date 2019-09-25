@@ -1,11 +1,11 @@
 set nocompatible              " required
 filetype off                  " required
-call plug#begin()
-Plug 'tpope/vim-sensible'
+"call plug#begin()
+"Plug 'tpope/vim-sensible'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-call plug#end()
+"Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+"call plug#end()
 
 set autoindent
 set ruler
@@ -15,6 +15,10 @@ syntax enable
 set number
 set tabstop=4
 set shiftwidth=4
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase 
 set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h13
 set enc=utf-8
 set cindent
